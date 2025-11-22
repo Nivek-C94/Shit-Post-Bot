@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Request Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>KRS Quote Request</h1>
+        <form id="quoteForm">
+            <div class="slide active" id="slide1">
+                <h2>Contact Info</h2>
+                <label>Name:</label>
+                <input type="text" name="name" required>
+                <label>Email:</label>
+                <input type="email" name="email" required>
+                <button type="button" class="next">Next →</button>
+            </div>
+
+            <div class="slide" id="slide2">
+                <h2>Move Details</h2>
+                <label>Move Type:</label>
+                <input type="text" name="move_type">
+                <label>Target Date:</label>
+                <input type="date" name="target_date">
+                <label>Time Window:</label>
+                <input type="text" name="time_window">
+                <button type="button" class="prev">← Previous</button>
+                <button type="button" class="next">Next →</button>
+            </div>
+
+            <div class="slide" id="slide3">
+                <h2>Service Info</h2>
+                <label>Service Type:</label>
+                <input type="text" name="service_type">
+                <label>Item Count:</label>
+                <input type="number" name="item_count">
+                <label>Items:</label>
+                <textarea name="items"></textarea>
+                <label>Access Notes:</label>
+                <textarea name="access_notes"></textarea>
+                <button type="button" class="prev">← Previous</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div id="log"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
